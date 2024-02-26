@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="341dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="355dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="22dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/btn_Next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Next" />
+
+        <Button
+            android:id="@+id/btn_Previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            tools:text="@string/btn_Previous" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="226dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/author"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="111dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtScore">
+
+        <Button
+            android:id="@+id/btn_True"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="True"
+            tools:text="@string/btn_True" />
+
+        <Button
+            android:id="@+id/btn_False"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="False"
+            tools:text="@string/btn_False" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
